@@ -1,0 +1,40 @@
+.content {
+	height: 45px;
+}
+
+label {
+	float: left;
+	height: 35px;
+	line-height: 35px;
+}
+
+.input {
+	border: 1px solid #f10215;
+	outline: none;
+	height: 35px;
+	width: 260px;
+	margin: 0;
+	padding: 0;
+	font-size:16px;
+	float: left;
+	margin-left: 10px;
+	padding-left: 10px;
+	color: #666;
+}
+
+.button {
+	height: 37px;
+	width: 50px;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	border: none;
+	float: left;
+	color: #fff;
+	font: 16px "Microsoft Yahei";
+	background-color: #f10215;
+}
+
+ul,li {
+	list-style: none;
+}
