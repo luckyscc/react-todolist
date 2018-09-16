@@ -8,6 +8,16 @@ class TodoItem extends Component {
 		this.handleClick = this.handleClick.bind(this);
 	}
 
+	// 当一个组件从父组件接受参数，只要父组件的render执行了，子组件的该方法就会执行
+	componentWillReceiveProps() {
+		console.log('child componentWillReceiveProps');
+	}
+
+	// 组件被页面移除时执行
+	componentWillUnMount() {
+		console.log('child componentWillUnMount');
+	}
+	
 	handleClick() {
 		const { deleteItem, index } = this.props;
 		deleteItem(index);
