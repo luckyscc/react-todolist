@@ -18,6 +18,13 @@ class TodoItem extends Component {
 		console.log('child componentWillUnMount');
 	}
 	
+	shouldComponentUpdate(nextProps, nextState) {
+		if(nextProps.content !== this.props.content) {
+			return true;
+		}else {
+			return false;
+		}
+	}
 	handleClick() {
 		const { deleteItem, index } = this.props;
 		deleteItem(index);
